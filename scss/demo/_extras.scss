@@ -1,0 +1,170 @@
+
+/* ----------------------------------------------------------------
+
+	extras.scss
+
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Extra Styles
+-----------------------------------------------------------------*/
+
+.shipping-banner {
+	position: absolute;
+	left: 4.375rem;
+	top: 5.625rem;	
+}
+
+.link-icon {
+	background-image: url(../images/icons/link.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	display: inline-block;
+	width: 2.5625rem;
+	height: 2.5625rem;
+
+	&.black {
+		background-image: url(../images/icons/link_black.png);
+	}
+}
+
+a {
+	.link-icon {
+		@include transition(all 0.3s ease-in-out);
+	}
+
+	&:hover {
+		.link-icon {
+			@include translateX(1rem);
+		}
+	}	
+}
+
+.about-top, .about-main, .about-bottom {
+	border-color: #efefef;
+
+	p {
+		font-size: 0.875rem;
+		font-family: $body-font;
+		line-height: 1.5rem;
+		color: #6e6e6e;
+	}
+}
+
+.about-top {
+	@include media-breakpoint-down(lg) {
+		.col-lg-5 {
+			div {
+				padding: 0 !important;
+			}
+		}
+	
+		.col-lg-3 {
+			padding-top: 1rem !important;
+			padding-bottom: 1rem !important;
+		}
+	}
+}
+
+.about-us-link {
+	a {
+		padding: 0.5rem 4rem;
+		background-color: $theme-color;
+		color: white;
+		text-decoration: none;
+		font-size: .75rem;
+		border-radius: 2rem;
+		display: inline-block;
+	}
+
+	@include media-breakpoint-down(sm) {
+		margin-bottom: 1rem;
+	}
+}
+
+
+.carousel-indicator {
+	margin-top: 2rem;
+
+	li {
+		list-style: none;
+		padding: 0rem;
+
+		i {
+			font-size: 0.3rem;
+			color: #d6d7d8;
+		}
+
+		&:nth-child(1) {
+			i {
+				width: 2rem;
+				height: 3px;
+				vertical-align: baseline;
+				background-color: #e3b96c;
+				border-radius: 1rem;
+			}
+		}
+	}
+
+	@include media-breakpoint-down(sm) {
+		margin-top: 2rem;
+	}
+}
+
+.learn-more-link {
+	text-decoration: none;
+	background-color: $theme-color;
+	font-size: 0.875rem;
+	color: $dark;
+	padding: 1.3rem 4.5rem;
+    border-radius: 2rem;
+    font-weight: 600;
+	font-family: $body-font;
+	box-shadow: -3px 6px 2px -4px #c49c53;
+
+	i {
+		font-size: 0.9rem;
+		margin-left: 0.5rem;
+	}
+}
+
+#new-collection {
+	padding-bottom: 14rem;
+}
+
+
+// slider items//
+.slick-prev::before, .slick-next:before {
+	font-size: 1.5rem;
+	opacity: 1;
+	color:#dcdcdc;
+
+	@include media-breakpoint-down(lg) {
+	   display: none;
+   }
+}
+
+.slick-prev, .slick-next {
+	top: 1.5rem;
+}
+
+.slick-prev {
+	left: -4rem;
+
+	@include media-breakpoint-down(lg) {
+	   display: none !important;
+   }
+}
+
+.slick-next {
+	right: -4rem;
+
+   @include media-breakpoint-down(lg) {
+	   display: none !important;
+   }
+}
+
+.slick-list {
+	padding: 0 !important;
+}

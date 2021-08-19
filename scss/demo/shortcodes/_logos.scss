@@ -1,0 +1,26 @@
+.logos {
+	display: flex;
+	justify-content: space-between;
+	padding-top: 3rem;
+    padding-bottom: 3rem;
+	
+	.logo-item {
+		max-width: 13.625rem;
+		height: 2.25rem;
+		display: flex;
+
+		img {
+			width: auto;
+			height: auto;
+		}
+
+		@include media-breakpoint-down(sm) {
+			margin-left: 0.5rem;
+			margin-right: 0.5rem;
+		}
+	}
+
+	@include media-breakpoint-down(sm) {
+		padding: 2rem;
+	}
+} 
