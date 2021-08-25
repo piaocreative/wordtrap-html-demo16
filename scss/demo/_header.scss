@@ -95,15 +95,6 @@
 
 
 #top-btns {
-
-	.nav-item {
-		margin-right: 1rem;
-		
-		@include media-breakpoint-up(lg){
-			margin-bottom: 0;
-		}
-	}
-
 	.nav-link {
 		color: #242424;		
 		font-size: 0.875rem;	
