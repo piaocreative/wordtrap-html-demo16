@@ -47,7 +47,6 @@
 -----------------------------------------------------------------*/
 
 .navbar-brand {
-
 	img {
 		width: 100%;
 		height: auto;
@@ -154,7 +153,6 @@
 		@include media-breakpoint-up(lg) {
 			padding: 0;	
 		}
-		
 
 		&:hover {
 			color: $theme-color;
@@ -215,8 +213,8 @@
 
 	.input-group-addon  {
 		position: relative;
-		right: 2rem;
-		top: 0.8rem;
+		right: 2.25rem;
+		top: 1.1rem;
 		color: #242424;
 	}
 }

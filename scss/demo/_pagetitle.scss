@@ -46,6 +46,13 @@
 		color: white;
 		font-family: $body-font;
 	}
+
+	@include media-breakpoint-up(lg) {
+		.col-lg-6 {
+			margin-left: 5rem;
+    		padding: 0 !important;
+		}
+	}
 }
 
 .breadcrumb {

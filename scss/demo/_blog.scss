@@ -12,6 +12,13 @@
 .post {
 	position: relative;
 	margin-bottom: 1.875rem;
+	
+	&:hover {
+		.entry-title {
+			color: $theme-color;
+			text-decoration: underline;
+		}
+	}
 }
 
 .post-thumbnail {

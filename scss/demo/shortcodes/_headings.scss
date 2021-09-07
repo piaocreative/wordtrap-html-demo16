@@ -14,14 +14,15 @@
 -----------------------------------------------------------------*/
 
 .heading-block { 
-	margin-bottom: 0rem; 
+	margin-bottom: 3.25rem; 
 	position: relative;
 
 	.title {
 		color: #242424;
 		font-family: $heading-font;
 		font-weight: 500;
-
+		font-size: 5.25rem;
+		line-height: 1.2;
 	}
 
 	.sub-title {
@@ -35,7 +36,7 @@
 	}
 
 	.attach-link {
-		font-size: 0.875rem;
+		font-size: 1rem;
 		color: $white;
 		text-decoration: none;
 		font-family: $body-font;
@@ -52,7 +53,7 @@
 		}
 
 		&:before {
-			background-color: #3d3e3d;
+			background-color: #e9e9e9;
 			content: "";
 			display: inline-block;
 			height: 1px;
