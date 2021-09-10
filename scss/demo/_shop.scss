@@ -300,6 +300,8 @@
 		}
 
 		@include media-breakpoint-down(lg) {
+			position: relative;
+
 			.ads-body {
 				h3 {
 					font-size: 1.5rem;
