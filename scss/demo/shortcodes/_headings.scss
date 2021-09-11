@@ -65,11 +65,7 @@
 			opacity: 0.5;
 
 			@include media-breakpoint-down(lg) {
-				width: 12rem;
-			}
-
-			@include media-breakpoint-down(sm) {
-				width: 3rem;
+				display: none;
 			}
 		}
 	}

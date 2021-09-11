@@ -166,16 +166,48 @@ a {
    }
 }
 
-.slick-dots {
-	.slick-active {
-		button {
-			&:before {
-				content: "";
-				width: 23px;
-				height: 3px;
-				background-color: $black;
-				vertical-align: middle;
-				margin: 0.4rem;
+.testimonials {
+	.slick-dots {
+		.slick-active {
+			button {
+				&:before {
+					content: "";
+					width: 100%;
+					height: 3px;
+					background-color: $black;
+					vertical-align: middle;
+					margin-top: 0.4rem;
+				}
+			}
+		}
+	}
+}
+
+.collections {
+	.slick-dots {
+		display: flex;
+		bottom: -5rem;
+
+		li {
+			button {
+				&:before {
+					color: $white;
+					opacity: 1;
+					width: 50px;
+				}
+			}
+		}
+
+		.slick-active {
+			button {
+				&:before {
+					content: "";
+					width: 32px;
+					height: 4px;
+					background-color: $theme-color;
+					vertical-align: middle;
+					margin-top: 0.4rem;
+				}
 			}
 		}
 	}
