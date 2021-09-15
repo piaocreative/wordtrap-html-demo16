@@ -33,24 +33,30 @@
 
 
 /* ----------------------------------------------------------------
-	Sticky Header
------------------------------------------------------------------*/
-
-#header-wrap {
-	padding-left: 2.8125rem;
-	padding-right: 2.8125rem;
-}
-
-
-/* ----------------------------------------------------------------
 	Logo
 -----------------------------------------------------------------*/
 
 .navbar-brand {
+	margin-right: 2.5rem;
+
 	img {
-		width: 100%;
-		height: auto;
+		max-width: 5.0625rem;		
 	}
+}
+
+
+/* ----------------------------------------------------------------
+	Navbar Toggler
+-----------------------------------------------------------------*/
+
+.navbar-light .navbar-toggler {
+	border: 0;
+	border-radius: 0;
+	margin-right: auto;
+
+	@include media-breakpoint-up(lg) {
+		margin-right: 3.5rem;
+	}	
 }
 
 
@@ -69,9 +75,11 @@
 	}
 
 	.nav-item {
+		border-top: 1px solid transparent;
+		border-bottom: 1px solid transparent;
+
 		&:hover {
-			border-top: 1px solid $primary;
-			border-bottom: 1px solid $primary;
+			border-color: $primary;
 
 			a {
 				color: $theme-color;
@@ -206,6 +214,8 @@
 }
 
 #top-search {
+	min-width: 31.5625rem;
+
 	input {
 		border-radius: 2rem;
 		background-color: #f9f9f9;
@@ -293,7 +303,7 @@
 		}
 	}
 
-	@include media-breakpoint-down(lg) {
+	@include media-breakpoint-down(xl) {
 		position: relative;
 		right: 3rem;
 		display: flex;
@@ -309,6 +319,12 @@
 
 		ul {
 			display: flex;
+
+			li {
+				a {
+					color: $white;
+				}
+			}
 		}
 	}
 }

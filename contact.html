@@ -43,104 +43,105 @@
         <!-- Header
 		============================================= -->
         <header id="header" class="transparent-header">
-    
-            <div id="header-wrap">
 
-                <div class="container">
+            <!-- Navbar
+           ============================================= -->
+           <nav class="navbar navbar-light">
 
-                    <div class="row">
+               <div class="container">
+   
+                   <!-- Logo
+                   ============================================= -->
+                   <a href="index.html" class="navbar-brand" data-dark-logo="images/logo.png">
+                       <img src="images/logo.png" alt="Saler Logo">
+                   </a>
+                   
+                   <!-- Navbar Toggler
+                   ============================================= -->
+                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false">
+                       <span class="navbar-toggler-icon"></span>
+                   </button>
 
-                        <nav class="navbar navbar-expand-lg navbar-dark">
+                   <!-- Top search
+                   ============================================= -->
+                   <div id="top-search" class="form-group d-none d-lg-flex me-auto">
+                       <div class="input-group">
+                           <input class="form-control" id="search" name="search" type="text" placeholder="Search"/>
+                           <div class="input-group-addon">
+                               <i class="fas fa-search"></i> 
+                           </div>
+                       </div>
+                   </div> <!-- top search -->
 
-                            <div class="container-fluid p-0">
+                   <!-- Top Buttons
+                   ============================================= -->
+                   <div id="top-btns">
+                       
+                       <ul class="navbar-nav flex-row">
 
-                                <!-- Logo
-                                ============================================= -->
-                                <a href="index.html" class="navbar-brand m-0" data-dark-logo="images/logo.png">
-                                    <img src="images/logo.png" alt="Saler Logo">
-                                </a>
-                                
-                                <!-- Navbar Toggler
-                                ============================================= -->
-                                <button class="navbar-toggler bg-primary" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false">
-                                    <span class="navbar-toggler-icon"></span>
-                                </button>
-                                
-                                <!-- Navbar Collapse
-                                ============================================= -->
-                                <div id="navbarCollapse" class="collapse navbar-collapse justify-content-between w-100">
+                           <li class="nav-item">
+                               <a href="#" class="nav-link pt-1 d-flex align-items-center">
+                                   <span>Login</span>
+                                   <i class="far fa-user ms-2"></i>
+                               </a>
+                           </li>
 
-                                    <!-- Top Links
-                                    ============================================= -->
-                                    <div id="top-links" class="w-100">
-        
-                                        <ul class="nav navbar-nav align-items-center">
+                           <li class="nav-item">
+                               <a href="#" class="nav-link pt-1 d-flex align-items-center">
+                                   <span>Favorite</span>
+                                   <i class="far fa-heart ms-2"></i>
+                               </a>
+                           </li>
 
-                                            <li class="nav-item p-0 mt-2 mx-4">
-                                                <a href="#" class="nav-link">Menu<i class="fas fa-bars ms-2"></i></a>
-                                            </li>
+                           <li class="nav-item">
+                               <a class="nav-link pt-1 d-flex align-items-center" data-toggle="modal" href="#modalShoppingCart">
+                                   <dpan>Cart</dpan>
+                                   <span data-cart-items="2">
+                                       <i class="fas fa-shopping-cart ms-1"></i>
+                                   </span>
+                               </a>
+                           </li>
 
-                                            <li class="nav-item w-75">
-                                                <!-- Top search
-                                                ============================================= -->
-                                                <div id="top-search" class="form-group">
-                                                    <div class="input-group">
-                                                        <input class="form-control" id="search" name="search" type="text" placeholder="Search"/>
-                                                        <div class="input-group-addon">
-                                                            <i class="fas fa-search"></i> 
-                                                        </div>
-                                                    </div>
-                                                </div> <!-- top search -->
-                                            </li>
-        
-                                        </ul>
-        
-                                    </div><!-- .top-links -->
+                       </ul>
 
-                                    <!-- Top Buttons
-                                    ============================================= -->
-                                    <div id="top-btns">
-                                        
-                                        <ul class="navbar-nav flex-row">
-        
-                                            <li class="nav-item">
-                                                <a href="#" class="nav-link pt-1 d-flex align-items-center">
-                                                    <span>Login</span>
-                                                    <i class="far fa-user ms-2"></i>
-                                                </a>
-                                            </li>
+                   </div><!-- #top-btns -->
 
-                                            <li class="nav-item">
-                                                <a href="#" class="nav-link pt-1 d-flex align-items-center">
-                                                    <span>Favorite</span>
-                                                    <i class="far fa-heart ms-2"></i>
-                                                </a>
-                                            </li>
-        
-                                            <li class="nav-item">
-                                                <a class="nav-link pt-1 d-flex align-items-center" data-toggle="modal" href="#modalShoppingCart">
-                                                    <dpan>Cart</dpan>
-                                                    <span data-cart-items="2">
-                                                        <i class="fas fa-shopping-cart ms-1"></i>
-                                                    </span>
-                                                </a>
-                                            </li>
-        
-                                        </ul>
-        
-                                    </div><!-- #top-btns -->
-        
-                                </div><!-- #header-right-col -->
-        
-                            </div>
-        
-                        </nav>
+               </div>
 
-                    </div>
+           </nav>
 
-                </div>                
-            
-            </div><!-- #header-wrap -->
+           <!-- Navbar Collapse
+           ============================================= -->
+           <div class="collapse navbar-collapse" id="navbarCollapse">
+
+               <div class="container">
+               
+                   <!-- Primary Navigation
+                   ============================================= -->
+                   <ul id="primary-menu" class="navbar-nav">
+                       <li class="current nav-item">
+                           <a href="#" class="nav-link">Home</a>
+                       </li>                                  
+                       <li class="nav-item">
+                           <a href="#" class="nav-link">Shop</a>
+                       </li>
+                       <li class="nav-item">
+                           <a href="#" class="nav-link">Accessories</a>
+                       </li>                                    
+                       <li class="nav-item">
+                           <a href="#" class="nav-link">About</a>
+                       </li>
+                       <li class="nav-item">
+                           <a href="#" class="nav-link">Contact</a>
+                       </li>
+                       <li class="nav-item">
+                           <a href="#" class="nav-link">Blog</a>
+                       </li>
+                   </ul><!-- #primary-menu -->
+
+               </div>
+
+           </div>
 
         </header><!-- #header -->
 
@@ -283,7 +284,7 @@
 
                     <div class="row">
 
-                        <div class="col-lg-7 border-lg-end text-center text-lg-start" style="border-color: #3c393b !important;">
+                        <div class="col-xl-7 border-lg-end text-center text-xl-start" style="border-color: #3c393b !important;">
 
                             <a href="index.html" class="navbar-brand d-block" data-dark-logo="images/logo.png">
                                 <img src="images/logo.png" alt="Saler Logo">
@@ -291,10 +292,10 @@
 
                             <div class="widget widget-subscribe mt-3">
                                 <div class="widget-content">
-                                    <div class="col-lg-8">
+                                    <div class="col-xl-8">
                                         <p class="mt-5 mb-2">Sign up for our newsletter to receive special offers, news and great sales notifications.</p>
                                     </div>
-                                    <div class="col-lg-11">
+                                    <div class="col-xl-11">
                                         <form id="widget-subscribe-form" action="#" method="post">
                                             <div class="input-group">
                                                 <input type="email" id="widget-subscribe-form-email" name="widget-subscribe-form-email" class="form-control required email" placeholder="Enter e-mail">
@@ -313,7 +314,7 @@
 
                             <div class="row m-0">
                                 <div class="col-md-6">
-                                    <div class="widget widget-links ps-lg-5 text-center text-lg-start">
+                                    <div class="widget widget-links ps-lg-5 text-center text-xl-start">
                                         <h5 class="widget-title text-white">Menu</h5>
                                         <div class="widget-content">
                                             <ul class="list-group">
@@ -326,7 +327,7 @@
                                 </div>
 
                                 <div class="col-md-6">
-                                    <div class="widget widget-links text-center text-lg-start mt-lg-6">
+                                    <div class="widget widget-links text-center text-xl-start mt-lg-6">
                                         <div class="widget-content">
                                             <ul class="list-group">
                                                 <li><a href="#">Catalogue</a></li>
@@ -342,7 +343,7 @@
                         
                         <div class="col-md-6 col-xl-2">
 
-                            <div class="widget widget-links text-center text-lg-start">
+                            <div class="widget widget-links text-center text-xl-start">
                                 <p class="widget-title text-white">Contacts</p>
                                 <div class="widget-content">
                                     <ul class="list-group">
@@ -354,7 +355,7 @@
 
                             <div class="widget widget-social mb-lg-0">
                                 <div class="widget-content">
-                                    <ul class="social-icons d-flex gap-2 justify-content-lg-start justify-content-center align-items-center mt-2">
+                                    <ul class="social-icons d-flex gap-2 justify-content-xl-start justify-content-center align-items-center mt-2">
                                         <li><a href="#" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
                                         <li><a href="#" target="_blank" title="Linkedin"><i class="fab fa-instagram"></i></a></li>
                                         <li><a href="#" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a></li>

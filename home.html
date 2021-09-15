@@ -43,104 +43,105 @@
         <!-- Header
 		============================================= -->
         <header id="header" class="transparent-header">
-    
-            <div id="header-wrap">
+
+             <!-- Navbar
+            ============================================= -->
+            <nav class="navbar navbar-light">
 
                 <div class="container">
+    
+                    <!-- Logo
+                    ============================================= -->
+                    <a href="index.html" class="navbar-brand" data-dark-logo="images/logo.png">
+                        <img src="images/logo.png" alt="Saler Logo">
+                    </a>
+                    
+                    <!-- Navbar Toggler
+                    ============================================= -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
 
-                    <div class="row">
-
-                        <nav class="navbar navbar-expand-lg navbar-dark">
-
-                            <div class="container-fluid p-0">
-
-                                <!-- Logo
-                                ============================================= -->
-                                <a href="index.html" class="navbar-brand m-0" data-dark-logo="images/logo.png">
-                                    <img src="images/logo.png" alt="Saler Logo">
-                                </a>
-                                
-                                <!-- Navbar Toggler
-                                ============================================= -->
-                                <button class="navbar-toggler bg-primary" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false">
-                                    <span class="navbar-toggler-icon"></span>
-                                </button>
-                                
-                                <!-- Navbar Collapse
-                                ============================================= -->
-                                <div id="navbarCollapse" class="collapse navbar-collapse justify-content-between w-100">
-
-                                    <!-- Top Links
-                                    ============================================= -->
-                                    <div id="top-links" class="w-100">
-        
-                                        <ul class="nav navbar-nav align-items-center">
-
-                                            <li class="nav-item p-0 mt-2 mx-4">
-                                                <a href="#" class="nav-link">Menu<i class="fas fa-bars ms-2"></i></a>
-                                            </li>
-
-                                            <li class="nav-item w-75">
-                                                <!-- Top search
-                                                ============================================= -->
-                                                <div id="top-search" class="form-group">
-                                                    <div class="input-group">
-                                                        <input class="form-control" id="search" name="search" type="text" placeholder="Search"/>
-                                                        <div class="input-group-addon">
-                                                            <i class="fas fa-search"></i> 
-                                                        </div>
-                                                    </div>
-                                                </div> <!-- top search -->
-                                            </li>
-        
-                                        </ul>
-        
-                                    </div><!-- .top-links -->
-
-                                    <!-- Top Buttons
-                                    ============================================= -->
-                                    <div id="top-btns">
-                                        
-                                        <ul class="navbar-nav flex-row">
-        
-                                            <li class="nav-item">
-                                                <a href="#" class="nav-link pt-1 d-flex align-items-center">
-                                                    <span>Login</span>
-                                                    <i class="far fa-user ms-2"></i>
-                                                </a>
-                                            </li>
-
-                                            <li class="nav-item">
-                                                <a href="#" class="nav-link pt-1 d-flex align-items-center">
-                                                    <span>Favorite</span>
-                                                    <i class="far fa-heart ms-2"></i>
-                                                </a>
-                                            </li>
-        
-                                            <li class="nav-item">
-                                                <a class="nav-link pt-1 d-flex align-items-center" data-toggle="modal" href="#modalShoppingCart">
-                                                    <dpan>Cart</dpan>
-                                                    <span data-cart-items="2">
-                                                        <i class="fas fa-shopping-cart ms-1"></i>
-                                                    </span>
-                                                </a>
-                                            </li>
-        
-                                        </ul>
-        
-                                    </div><!-- #top-btns -->
-        
-                                </div><!-- #header-right-col -->
-        
+                    <!-- Top search
+                    ============================================= -->
+                    <div id="top-search" class="form-group d-none d-lg-flex me-auto">
+                        <div class="input-group">
+                            <input class="form-control" id="search" name="search" type="text" placeholder="Search"/>
+                            <div class="input-group-addon">
+                                <i class="fas fa-search"></i> 
                             </div>
-        
-                        </nav>
+                        </div>
+                    </div> <!-- top search -->
 
-                    </div>
+                    <!-- Top Buttons
+                    ============================================= -->
+                    <div id="top-btns">
+                        
+                        <ul class="navbar-nav flex-row">
 
-                </div>                
-            
-            </div><!-- #header-wrap -->
+                            <li class="nav-item">
+                                <a href="#" class="nav-link pt-1 d-flex align-items-center">
+                                    <span>Login</span>
+                                    <i class="far fa-user ms-2"></i>
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="#" class="nav-link pt-1 d-flex align-items-center">
+                                    <span>Favorite</span>
+                                    <i class="far fa-heart ms-2"></i>
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link pt-1 d-flex align-items-center" data-toggle="modal" href="#modalShoppingCart">
+                                    <dpan>Cart</dpan>
+                                    <span data-cart-items="2">
+                                        <i class="fas fa-shopping-cart ms-1"></i>
+                                    </span>
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </div><!-- #top-btns -->
+
+                </div>
+
+            </nav>
+
+            <!-- Navbar Collapse
+            ============================================= -->
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+
+                <div class="container">
+                
+                    <!-- Primary Navigation
+                    ============================================= -->
+                    <ul id="primary-menu" class="navbar-nav">
+                        <li class="current nav-item">
+                            <a href="#" class="nav-link">Home</a>
+                        </li>                                  
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Shop</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Accessories</a>
+                        </li>                                    
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Blog</a>
+                        </li>
+                    </ul><!-- #primary-menu -->
+
+                </div>
+
+            </div>
 
         </header><!-- #header -->
 
@@ -154,7 +155,7 @@
 		        ============================================= -->
                 <div class="row g-0 position-relative">
 
-                    <div class="col-lg-1 offset-xl-2 position-relative">
+                    <div class="col-xl-1 offset-xl-2 position-relative">
                         <div id="top-social" class="col-xl-1">
                             <p class="top-social-title m-0">Social Network</p>
                             <ul>
@@ -165,7 +166,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-9">
+                    <div class="col-xl-9">
                         <section id="banner">
                             <img src="./images/banner/main-banner.png" alt="banner" class="img-fluid">
                         </section>
@@ -209,12 +210,14 @@
                         <div class="logo-item"><img src="images/logos/logo2.png" alt="Logo Image" class="img-fluid"></div>
                         <div class="logo-item"><img src="images/logos/logo3.png" alt="Logo Image" class="img-fluid"></div>
                         <div class="logo-item"><img src="images/logos/logo1.png" alt="Logo Image" class="img-fluid"></div>
+                        <div class="logo-item"><img src="images/logos/logo2.png" alt="Logo Image" class="img-fluid"></div>
+                        <div class="logo-item"><img src="images/logos/logo3.png" alt="Logo Image" class="img-fluid"></div>
                     </div>
                 </div><!-- logos -->
 
                 <!-- Catalogue
                 ============================================= -->
-                <div class="section bg-cover" style="background-image: url(./images/background.png);">
+                <div class="section bg-cover pt-lg-7" style="background-image: url(./images/background.png);">
 
                     <div class="container">
 
@@ -292,74 +295,74 @@
 
                         <div class="row m-0">
 
-                            <div class="col-md-6 col-lg-3">
+                            <div class="col-md-6 col-lg-3 text-center">
 
                                 <div class="product">
                                     <div class="product-image">
                                         <a href="#"><img src="./images/shop/product3.png" class="img-fluid"></a>
                                         <div class="add-to-wishlist"><i class="fas fa-heart"></i></div>
+                                        <div class="onnew">New</div>
                                     </div>
-                                    <div class="product-details text-center">
+                                    <div class="product-details">
                                         <p class="product-title heading-font text-primary mb-2">Jagular J863/D</p>
                                         <div class="product-price">
                                             <p class="text-white mb-0">$ 5990</p>
                                         </div>
-                                    </div>
-                                    <div class="onnew">New</div>
+                                    </div>                                    
                                 </div>
 
                             </div>
 
-                            <div class="col-md-6 col-lg-3">
+                            <div class="col-md-6 col-lg-3 text-center">
 
                                 <div class="product">
                                     <div class="product-image">
                                         <a href="#"><img src="./images/shop/product3.png" class="img-fluid"></a>
                                         <div class="add-to-wishlist"><i class="fas fa-heart"></i></div>
+                                        <div class="onsale">-20%</div>
                                     </div>
-                                    <div class="product-details text-center">
+                                    <div class="product-details">
                                         <p class="product-title heading-font text-primary mb-2">Candino C4712/2</p>
                                         <div class="product-price">
                                             <p class="text-white mb-0">$ 1790 <del>$ 2237</del></p>
                                         </div>
-                                    </div>
-                                    <div class="onsale">-20%</div>
+                                    </div>                                    
                                 </div>
 
                             </div>
 
-                            <div class="col-md-6 col-lg-3">
+                            <div class="col-md-6 col-lg-3 text-center">
 
                                 <div class="product">
                                     <div class="product-image">
                                         <a href="#"><img src="./images/shop/product3.png" class="img-fluid"></a>
                                         <div class="add-to-wishlist"><i class="fas fa-heart"></i></div>
+                                        <div class="onsale">-20%</div>
                                     </div>
-                                    <div class="product-details text-center">
+                                    <div class="product-details">
                                         <p class="product-title heading-font text-primary mb-2">Jagular J863/D</p>
                                         <div class="product-price">
                                             <p class="text-white mb-0">$ 5990</p>
                                         </div>
-                                    </div>
-                                    <div class="onsale">-20%</div>
+                                    </div>                                    
                                 </div>
 
                             </div>
 
-                            <div class="col-md-6 col-lg-3">
+                            <div class="col-md-6 col-lg-3 text-center">
 
                                 <div class="product">
                                     <div class="product-image">
                                         <a href="#"><img src="./images/shop/product3.png" class="img-fluid"></a>
                                         <div class="add-to-wishlist"><i class="fas fa-heart"></i></div>
+                                        <div class="onsale">-20%</div>
                                     </div>
-                                    <div class="product-details text-center">
+                                    <div class="product-details">
                                         <p class="product-title heading-font text-primary mb-2">Jagular J863/D</p>
                                         <div class="product-price">
                                             <p class="text-white mb-0">$ 5990</p>
                                         </div>
-                                    </div>
-                                    <div class="onsale">-20%</div>
+                                    </div>                                    
                                 </div>
 
                             </div>
@@ -380,53 +383,50 @@
                             <h2 class="h1 title heading-font text-primary m-0">New Collection</h2>
                         </div>
 
-                        <div class="row m-0">
-                            
+                        <div class="row">
+
                             <div class="col-md-6 col-lg-4 mb-3">
                                 <img src="./images/posts/collection1.png" class="img-full rounded-1">
                             </div>
 
-                            <div class="col-md-6 col-lg-3 ps-4">
-
+                            <div class="col-md-6 col-lg-3 ps-4 text-center">
+    
                                 <img src="./images/posts/collection2.png" class="img-fluid rounded-1 mb-3 w-100">
 
-                                <div class="product mt-3 mb-0 w-75 m-auto">
+                                <div class="product mt-3 mb-0 m-auto">
                                     <div class="product-image">
                                         <a href="#"><img src="./images/shop/product3.png" class="img-fluid"></a>
                                         <div class="add-to-wishlist"><i class="fas fa-heart"></i></div>
+                                        <div class="onnew">New</div>
                                     </div>
                                     <div class="product-details text-center">
                                         <p class="product-title heading-font text-primary mb-2">Jagular J863/D</p>
                                         <div class="product-price">
                                             <p class="text-white mb-0">$ 5990</p>
                                         </div>
-                                    </div>
-                                    <div class="onnew">New</div>
+                                    </div>                                    
                                 </div>
                             </div>
 
                             <div class="col-lg-5 ps-4">
 
-                                <div class="collections d-flex">
-                                    <div class="m-1">
+                                <div class="collections">
+                                    <div>
                                         <h4 class="heading-font text-primary fw-normal mb-1">Jaguar J863/D Designed <br>for Brutal Men</h4>
                                         <p class="text-white lh-sm fw-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum</p>
                                         <a href="#" class="btn learn-more-link">Learn More</a>
                                     </div>
-                                    
-                                    <div class="m-1">
+                                    <div>
                                         <h4 class="heading-font text-primary fw-normal mb-1">Jaguar J863/D Designed <br>for Brutal Men</h4>
                                         <p class="text-white lh-sm fw-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum</p>
-                                        <a href="#" class="btn learn-more-link">Learn More</a>
+                                        <a href="#" class="btn learn-more-link">Learn More</a>                                        
                                     </div>
-
-                                    <div class="m-1">
+                                    <div>
                                         <h4 class="heading-font text-primary fw-normal mb-1">Jaguar J863/D Designed <br>for Brutal Men</h4>
                                         <p class="text-white lh-sm fw-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum</p>
                                         <a href="#" class="btn learn-more-link">Learn More</a>
                                     </div>
                                 </div>
-
 
                             </div>
 
@@ -441,6 +441,7 @@
                 <div class="section">
                     
                     <div class="container">
+
                         <div class="ads ads1 px-3">
                             <div class="ads-bg">
                                 <img src="./images/ads/ads.png" class="img-full">
@@ -454,6 +455,7 @@
                             </div> 
     
                         </div>
+
                     </div>
 
                 </div><!-- ads -->
@@ -469,13 +471,13 @@
                             <a href="#" class="attach-link text-secondary">More News<i class="fas fa-angle-right"></i></a>
                         </div>
                         
-                        <div class="row g-0">
+                        <div class="row">
 
                             <div class="col-lg-4 col-md-6">
 
                                 <article class="post">
                                     <div class="post-thumbnail">
-                                        <a href="#"><img src="./images/posts/post1.png" class="img-fluid rounded-start" alt="Posts"></a>
+                                        <a href="#"><img src="./images/posts/post1.png" class="img-fluid rounded" alt="Posts"></a>
                                     </div>
                                     <div class="post-content">
                                         <div class="entry-meta mb-1">
@@ -491,7 +493,7 @@
 
                                 <article class="post">
                                     <div class="post-thumbnail">
-                                        <a href="#"><img src="./images/posts/post2.png" class="img-fluid" alt="Posts"></a>
+                                        <a href="#"><img src="./images/posts/post2.png" class="img-fluid rounded" alt="Posts"></a>
                                     </div>
                                     <div class="post-content">
                                         <div class="entry-meta mb-1">
@@ -507,7 +509,7 @@
 
                                 <article class="post">
                                     <div class="post-thumbnail">
-                                        <a href="#"><img src="./images/posts/post3.png" class="img-fluid rounded-end" alt="Posts"></a>
+                                        <a href="#"><img src="./images/posts/post3.png" class="img-fluid rounded" alt="Posts"></a>
                                     </div>
                                     <div class="post-content">
                                         <div class="entry-meta mb-1">
@@ -527,7 +529,7 @@
 
                 <!-- Testimonials
                 ============================================= -->
-                <div class="section">
+                <div class="section pt-3">
 
                     <div class="container">
                         
@@ -537,7 +539,7 @@
     
                                 <div class="testimonials">
                                     
-                                    <div class="testimonial text-center ">
+                                    <div class="testimonial text-center">
                                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
                                         <div class="avatar">
                                             <img src="./images/avata.png" class="img-fluid m-auto">
@@ -545,7 +547,7 @@
                                         <h4 class="heading-font text-secondary text-uppercase">Victory Muller</h4>
                                     </div>
     
-                                    <div class="testimonial text-center ">
+                                    <div class="testimonial text-center">
                                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
                                         <div class="avatar">
                                             <img src="./images/avata.png" class="img-fluid m-auto">
@@ -553,7 +555,7 @@
                                         <h4 class="heading-font text-secondary text-uppercase">Victory Muller</h4>
                                     </div>
 
-                                    <div class="testimonial text-center ">
+                                    <div class="testimonial text-center">
                                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
                                         <div class="avatar">
                                             <img src="./images/avata.png" class="img-fluid m-auto">
@@ -587,7 +589,7 @@
 
                     <div class="row">
 
-                        <div class="col-lg-7 border-lg-end text-center text-lg-start" style="border-color: #3c393b !important;">
+                        <div class="col-xl-7 border-lg-end text-center text-xl-start" style="border-color: #3c393b !important;">
 
                             <a href="index.html" class="navbar-brand d-block" data-dark-logo="images/logo.png">
                                 <img src="images/logo.png" alt="Saler Logo">
@@ -595,10 +597,10 @@
 
                             <div class="widget widget-subscribe mt-3">
                                 <div class="widget-content">
-                                    <div class="col-lg-8">
+                                    <div class="col-xl-8">
                                         <p class="mt-5 mb-2">Sign up for our newsletter to receive special offers, news and great sales notifications.</p>
                                     </div>
-                                    <div class="col-lg-11">
+                                    <div class="col-xl-11">
                                         <form id="widget-subscribe-form" action="#" method="post">
                                             <div class="input-group">
                                                 <input type="email" id="widget-subscribe-form-email" name="widget-subscribe-form-email" class="form-control required email" placeholder="Enter e-mail">
@@ -617,7 +619,7 @@
 
                             <div class="row m-0">
                                 <div class="col-md-6">
-                                    <div class="widget widget-links ps-lg-5 text-center text-lg-start">
+                                    <div class="widget widget-links ps-lg-5 text-center text-xl-start">
                                         <h5 class="widget-title text-white">Menu</h5>
                                         <div class="widget-content">
                                             <ul class="list-group">
@@ -630,7 +632,7 @@
                                 </div>
 
                                 <div class="col-md-6">
-                                    <div class="widget widget-links text-center text-lg-start mt-lg-6">
+                                    <div class="widget widget-links text-center text-xl-start mt-lg-6">
                                         <div class="widget-content">
                                             <ul class="list-group">
                                                 <li><a href="#">Catalogue</a></li>
@@ -646,7 +648,7 @@
                         
                         <div class="col-md-6 col-xl-2">
 
-                            <div class="widget widget-links text-center text-lg-start">
+                            <div class="widget widget-links text-center text-xl-start">
                                 <p class="widget-title text-white">Contacts</p>
                                 <div class="widget-content">
                                     <ul class="list-group">
@@ -658,7 +660,7 @@
 
                             <div class="widget widget-social mb-lg-0">
                                 <div class="widget-content">
-                                    <ul class="social-icons d-flex gap-2 justify-content-lg-start justify-content-center align-items-center mt-2">
+                                    <ul class="social-icons d-flex gap-2 justify-content-xl-start justify-content-center align-items-center mt-2">
                                         <li><a href="#" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
                                         <li><a href="#" target="_blank" title="Linkedin"><i class="fab fa-instagram"></i></a></li>
                                         <li><a href="#" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a></li>

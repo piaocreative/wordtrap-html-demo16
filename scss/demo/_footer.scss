@@ -37,6 +37,14 @@
 			}
 		}
 	}
+
+	.border-start {
+		border: 0 !important;
+
+		@include media-breakpoint-up(lg) {
+			border-left: 1px solid #3c393b !important;
+		}
+	}
 }
 
 #footer-bottom {

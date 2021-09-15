@@ -24,14 +24,14 @@
         height: 40rem;
         object-fit: cover;
         object-position: center;
-
-        @include media-breakpoint-down(sm) {
-            height: 35rem;
-        }
     }
 
     .banner-wrap {
         padding-left: 4.375rem;
         padding-right: 4.375rem;
+    }
+
+    @include media-breakpoint-down(sm) {
+        height: 35rem;
     }
 }

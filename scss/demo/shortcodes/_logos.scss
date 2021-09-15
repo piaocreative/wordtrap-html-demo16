@@ -5,20 +5,21 @@
     padding-bottom: 3rem;
 	
 	.logo-item {
-		max-width: 13.625rem;
-		height: 2.25rem;
+		max-width: 9.625rem;
+		height: 1.25rem;
 		display: flex !important;
-		justify-content: center;
-		align-items: center;
-		margin: auto;
 
 		img {
 			width: auto;
 			height: auto;
 		}
+
+		@include media-breakpoint-down(xl) {
+			margin: auto;
+		}
 	}
 
 	@include media-breakpoint-down(sm) {
-		padding: 1rem 0;
+		padding: 2rem;
 	}
 } 
