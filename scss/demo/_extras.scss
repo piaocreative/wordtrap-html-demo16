@@ -52,21 +52,6 @@ a {
 	}
 }
 
-.about-top {
-	@include media-breakpoint-down(lg) {
-		.col-lg-5 {
-			div {
-				padding: 0 !important;
-			}
-		}
-	
-		.col-lg-3 {
-			padding-top: 1rem !important;
-			padding-bottom: 1rem !important;
-		}
-	}
-}
-
 .about-us-link {
 	a {
 		padding: 0.5rem 4rem;
@@ -82,7 +67,6 @@ a {
 		margin-bottom: 1rem;
 	}
 }
-
 
 .carousel-indicator {
 	margin-top: 2rem;
