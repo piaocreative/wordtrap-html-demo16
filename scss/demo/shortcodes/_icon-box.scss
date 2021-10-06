@@ -15,28 +15,21 @@
 	margin-bottom: 1.5rem;
 
 	.icon-wrapper {
-		background-color: $theme-color;
-		padding: 1.5rem 1.55rem;
-		display: inline-block;
-		border-radius: 50%;
-		line-height: 1;
-
-		i {
-			color: $white;
-			font-size: 1.3rem;
-		}
-	}
-
-	span {
-		color: #c5c2c1;
-		font-family: $body-font;
-		font-size: 1.125rem;
+		font-size: 0.875rem;
+		min-width: 4rem;
 	}
 
 	.icon-header {
-		display: flex;
-		align-items: center;
-		line-height: 1;
-		color: #504a4a;
+		h4 {
+			font-family: $body-font;
+			color: $theme-color;
+			font-size: 0.875rem;
+			font-weight: 400;
+		}
+
+		p {
+			font-size: 0.75rem;
+			color: #b1b1b1;
+		}
 	}
 }

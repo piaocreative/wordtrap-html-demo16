@@ -19,7 +19,6 @@
 
 	.title {
 		color: #242424;
-		font-family: $heading-font;
 		font-weight: 500;
 		font-size: 5.25rem;
 		line-height: 1.2;
@@ -36,10 +35,8 @@
 	}
 
 	.attach-link {
-		font-size: 1rem;
 		color: $white;
 		text-decoration: none;
-		font-family: $body-font;
 		overflow: hidden;
 		font-weight: 300;
 

@@ -3,44 +3,14 @@
 	404.scss
 
 -----------------------------------------------------------------*/
-.error-404 {
-    position: relative;
-
-    .error-content {
-        position: absolute;
-        top: 0;
-        right: 0;
-        left: 0;
-        height: 100%;
-    }
-
-    .go-to-link {
-        text-decoration: none;
-        background-color: $theme-color;
-        font-size: 0.875rem;
-        color: $dark;
-        padding: 1.3rem;
-        border-radius: 2rem;
-        font-weight: 600;
-        font-family: $body-font;
-        box-shadow: -3px 6px 2px -4px #c49c53;
-    }
-
-    @include media-breakpoint-down(sm) {
-        .error-banner {
-            height: 29rem;
-        }
-
-        .error-content {
-            left: auto;
-        }
-    }
-
-    .error-sidebar {
-        margin-top: -15rem;
-
-        @include media-breakpoint-down(lg) {
-            margin: 0;
-        }
-    }
+.go-to-link {
+    text-decoration: none;
+    background-color: $theme-color;
+    font-size: 0.875rem;
+    color: $dark;
+    padding: 1.3rem;
+    border-radius: 2rem;
+    font-weight: 600;
+    box-shadow: -3px 6px 2px -4px #c49c53;
+    background: linear-gradient(120deg, #e3b96c 40%, #e8d3ac, #e3b96c 70%);
 }
