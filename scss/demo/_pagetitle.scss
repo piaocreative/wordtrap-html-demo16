@@ -27,15 +27,6 @@
 		line-height: 1.3;
 	}
 
-	.sub-title {
-		font-size: 0.75rem;
-		color: #b1b1b1;
-
-		i {
-			font-size: 0.4rem;
-		}
-	}
-
 	@include media-breakpoint-up(lg) {
 		.col-lg-6 {
 			margin-left: 5rem;
@@ -43,20 +34,21 @@
 	}
 }
 
-.breadcrumb {
-	display: flex;
-	font-size: $h6-font-size;
-	padding: 0.625rem 0;
+#page-top {
+	.breadcrumb {
+		li {
+			a {
+				font-size: 0.75rem;
+				color: #b1b1b1;
 
-	li {
-		padding: 0 0.625rem;
+				i {
+					font-size: 0.4rem;
+				}
 
-		&.active {
-			color: #ddcef5;
-		}
-
-		&:first-child {
-			padding-left: 0;
+				&.active {
+					color: $dark;
+				}
+			}
 		}
 	}
 }
