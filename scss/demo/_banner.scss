@@ -27,11 +27,7 @@
     }
 
     .banner-wrap {
-        padding-left: 4.375rem;
-        padding-right: 4.375rem;
-    }
-
-    @include media-breakpoint-down(sm) {
-        height: 35rem;
+        padding-top: 4.375rem;
+        padding-bottom: 4.375rem;
     }
 }
