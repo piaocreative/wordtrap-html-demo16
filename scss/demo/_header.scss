@@ -38,6 +38,7 @@
 
 .navbar-brand {
 	margin-right: 2.5rem;
+	margin-top: -0.625rem;
 
 	img {
 		max-width: 5.0625rem;		
@@ -49,43 +50,12 @@
 	Navbar Toggler
 -----------------------------------------------------------------*/
 
-.navbar-light .navbar-toggler {
+.navbar-toggler {
 	border: 0;
-	border-radius: 0;
-	margin-right: auto;
 
 	@include media-breakpoint-up(lg) {
 		margin-right: 3.5rem;
 	}	
-}
-
-
-/* ----------------------------------------------------------------
-	Primary Menu
------------------------------------------------------------------*/
-
-#primary-menu {
-	.nav-link {
-		color: $primary-menu-font-color;
-		font-family: $body-font;
-		font-size: $primary-menu-font-size;
-		font-weight: $primary-menu-font-weight;		
-		letter-spacing: $primary-menu-font-spacing;
-		text-transform: $primary-menu-font-tt;
-	}
-
-	.nav-item {
-		border-top: 1px solid transparent;
-		border-bottom: 1px solid transparent;
-
-		&:hover {
-			border-color: $primary;
-
-			a {
-				color: $theme-color;
-			}
-		}
-	}
 }
 
 
@@ -100,20 +70,13 @@
 	Top Buttons
 -----------------------------------------------------------------*/
 
-
 #top-btns {
+	.nav-item {
+		padding-left: $nav-link-padding-x;
+		padding-right: $nav-link-padding-x;
+	}
+
 	.nav-link {
-		color: #242424;		
-		font-size: 0.875rem;	
-		line-height: 1;
-		padding: 0.7rem;
-		border-radius: 50%;
-		font-family: $body-font;
-
-		&:hover {
-			color: $primary;
-		}
-
 		[data-cart-items] {
 			position: relative;
 			display: inline-block;
@@ -141,84 +104,20 @@
 
 
 /* ----------------------------------------------------------------
-	Top Links
+	Top Search
 -----------------------------------------------------------------*/
-
-#top-links {
-	.nav-item {			
-
-		@include media-breakpoint-up(lg) {
-			padding: .875rem;
-		}
-	}
-
-	a.nav-link {
-		color: #242424;
-		display: block;
-		font-size: 0.875rem;
-		font-family: $body-font;	
-
-		@include media-breakpoint-up(lg) {
-			padding: 0;	
-		}
-
-		&:hover {
-			color: $theme-color;
-		}
-	}
-
-	.dropdown-toggle {
-		&::after {
-			margin-left: .75em;
-		}
-	}
-
-	.dropdown-menu {
-		background: $white;
-		border: 0;
-		top: $topbar-line-height;
-		left: 0;
-		width: 100%;		
-		margin: 0;
-		border-top: 3px solid $theme-color;
-
-		@include border-radius(0);
-
-		@include box-shadow(0 0 5px -1px rgba($black, 0.2));
-		
-		@include media-breakpoint-up(lg) {
-			width: 8.75rem;
-		}
-
-		a.dropdown-item {
-			color: $heading-color;
-			height: 2.25rem;
-			line-height: 2.25rem;
-			font-size: 0.75rem;				
-			padding: 0 0.75rem;
-
-			&:hover {
-				color: $theme-color;
-			}
-		}
-
-		img {
-			display: inline-block;
-			position: relative;
-			top: -1px;
-			width: 1rem;
-			height: 1rem;
-			margin-right: 0.25rem;
-		}
-	}
-}
 
 #top-search {
 	min-width: 31.5625rem;
 
 	input {
 		border-radius: 2rem;
-		background-color: #f9f9f9;
+		background-color: rgba(#e0e0e0, .1);
+		border-color: #e9e9e9;
+		color: #242424;
+		font-size: 0.875rem;
+		padding-left: 1.875rem;
+		padding-right: 1.875rem;
 	}
 
 	.input-group-addon  {
@@ -228,28 +127,6 @@
 		color: #242424;
 	}
 }
-
-/* ----------------------------------------------------------------
-	Top Infos
------------------------------------------------------------------*/
-
-#top-infos {
-	display: flex;
-
-	.phone-number {
-		margin-right: 2.875rem;
-		
-		a {
-			color: $topbar-color;
-			margin-left: 1.75rem;
-
-			&:hover {
-				color: $topbar-hover-color;
-			}
-		}
-	}
-}
-
 
 /* ----------------------------------------------------------------
 	Top Social
@@ -328,34 +205,3 @@
 		}
 	}
 }
-
-
-/* ----------------------------------------------------------------
-	Top Login
------------------------------------------------------------------*/
-
-
-
-/* ----------------------------------------------------------------
-	Top Search
------------------------------------------------------------------*/
-
-
-
-
-/* ----------------------------------------------------------------
-	Top Cart
------------------------------------------------------------------*/
-
-
-
-
-/* ----------------------------------------------------------------
-	Top Account
------------------------------------------------------------------*/
-
-
-
-
-
-

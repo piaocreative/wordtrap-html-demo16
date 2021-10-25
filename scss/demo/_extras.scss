@@ -10,85 +10,6 @@
 	Extra Styles
 -----------------------------------------------------------------*/
 
-.shipping-banner {
-	position: absolute;
-	left: 4.375rem;
-	top: 5.625rem;	
-}
-
-.container-fluid {
-	overflow: hidden;
-}
-
-.link-icon {
-	background-image: url(../images/icons/link.png);
-	background-size: 100%;
-	background-repeat: no-repeat;
-	display: inline-block;
-	width: 2.5625rem;
-	height: 2.5625rem;
-
-	&.black {
-		background-image: url(../images/icons/link_black.png);
-	}
-}
-
-a {
-	.link-icon {
-		@include transition(all 0.3s ease-in-out);
-	}
-
-	&:hover {
-		.link-icon {
-			@include translateX(1rem);
-		}
-	}	
-}
-
-.about-us-link {
-	a {
-		padding: 0.5rem 4rem;
-		background-color: $theme-color;
-		color: white;
-		text-decoration: none;
-		font-size: .75rem;
-		border-radius: 2rem;
-		display: inline-block;
-	}
-
-	@include media-breakpoint-down(sm) {
-		margin-bottom: 1rem;
-	}
-}
-
-.carousel-indicator {
-	margin-top: 2rem;
-
-	li {
-		list-style: none;
-		padding: 0rem;
-
-		i {
-			font-size: 0.25rem;
-			color: #d6d7d8;
-		}
-
-		&:nth-child(1) {
-			i {
-				width: 1.8rem;
-				height: 4px;
-				vertical-align: baseline;
-				background-color: #e3b96c;
-				border-radius: 1rem;
-			}
-		}
-	}
-
-	@include media-breakpoint-down(sm) {
-		margin-top: 2rem;
-	}
-}
-
 .learn-more-link {
 	background-color: $theme-color;
 	box-shadow: -3px 6px 2px -4px #c49c53;
@@ -108,50 +29,19 @@ a {
 	}
 }
 
-.collections {
-	.slick-dots {
-		display: flex;
-		top: 19rem;
-
-		li {
-			button {
-				&:before {
-					color: $white;
-					opacity: 1;
-					width: 50px;
-				}
-			}
-		}
-
-		.slick-active {
-			button {
-				&:before {
-					content: "";
-					width: 32px;
-					height: 4px;
-					background-color: $theme-color;
-					vertical-align: middle;
-					margin-top: 0.4rem;
-				}
-			}
-		}
-	}
-}
-
-
-// slider items//
-.slick-prev::before, .slick-next:before {
-	font-size: 1.5rem;
-	opacity: 1;
-	color:#dcdcdc;
-
-	@include media-breakpoint-down(lg) {
-	   display: none;
-   }
-}
-
+// Slider
 .slick-prev, .slick-next {
 	top: 1.5rem;
+
+	&::before {
+		font-size: 1.5rem;
+		opacity: 1;
+		color:#dcdcdc;
+	
+		@include media-breakpoint-down(lg) {
+		   display: none;
+	   }
+	}
 }
 
 .slick-prev {
@@ -171,16 +61,58 @@ a {
 }
 
 .slick-dots {
-	.slick-active {
+	li {
+		width: 0.25rem;
+		height: 0.25rem;
+
 		button {
+			width: 0.25rem;
+			height: 0.25rem;
+
 			&:before {
-				content: "";
-				width: 23px;
-				height: 4px;
+				color: #bbbbbb;
+				opacity: 1;
+				width: 0.25rem;
+				height: 0.25rem;
+				line-height: 0.25rem;
+			}
+		}
+	}
+
+	.slick-active {
+		width: 1.875rem;
+
+		button {
+			width: 1.875rem;
+
+			&:before {
+				color: transparent;
+				width: 1.875rem;
 				background-color: $dark;
-				vertical-align: middle;
-				margin-top: 0.4rem;
-				border-radius: 20rem;
+			}
+		}
+	}
+}
+
+.collections {
+	.slick-dots {
+		display: flex;
+		top: 19rem;
+
+		li {
+			button {
+				&:before {
+					color: $white;
+				}
+			}
+		}
+
+		.slick-active {
+			button {
+				&:before {
+					color: transparent;
+					background-color: $theme-color;
+				}
 			}
 		}
 	}

@@ -3,14 +3,17 @@
 	404.scss
 
 -----------------------------------------------------------------*/
-.go-to-link {
-    text-decoration: none;
-    background-color: $theme-color;
-    font-size: 0.875rem;
-    color: $dark;
-    padding: 1.3rem;
-    border-radius: 2rem;
-    font-weight: 600;
-    box-shadow: -3px 6px 2px -4px #c49c53;
-    background: linear-gradient(120deg, #e3b96c 40%, #e8d3ac, #e3b96c 70%);
+
+.error-sidebar {
+    .btn {
+        text-decoration: none;
+        background-color: $theme-color;
+        font-size: 0.875rem;
+        color: $dark;
+        padding: 1.3rem;
+        border-radius: 2rem;
+        font-weight: 600;
+        box-shadow: -3px 6px 2px -4px #c49c53;
+        background: linear-gradient(120deg, #e3b96c 40%, #e8d3ac, #e3b96c 70%);
+    }
 }

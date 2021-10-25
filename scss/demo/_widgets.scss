@@ -187,14 +187,14 @@
 
 				.input-group {
 					input {
-						font-size: 1.0625rem;
+						color: #242424;
+						font-size: 1.25rem;
+						padding-left: 2.5rem;
+						padding-right: 2.5rem;
 					}
 
 					button {
 						border-radius: 2rem;
-						padding: 1.5rem 4.5rem;
-						font-size: 0.875rem;
-						box-shadow: -5px 6px 2px -4px #c49c53;
 						background: linear-gradient(120deg, #e3b96c 40%, #e8d3ac, #e3b96c 70%);
 
 						i {

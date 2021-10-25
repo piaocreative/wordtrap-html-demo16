@@ -15,47 +15,17 @@
 -----------------------------------------------------------------*/
 
 #footer {
-	background-image: url(../images/background.png);
-
-	a {
-		text-decoration: none !important;
-	}
+	background-image: url(../images/footer_bg.png);
+	background-repeat: repeat;
+	padding-top: 4.375rem;
+	padding-bottom: 3.125rem;
 }
 
 #footer-main {
-	padding-top: 4rem;
-
-	.navbar-brand {
-		img {
-			width: 12%;
-			margin-top: -1rem;
-
-			@include media-breakpoint-down(lg) {
-				width: 20%;
-			}
-		}
-	}
-
-	.border-start {
-		border: 0 !important;
-
-		@include media-breakpoint-up(lg) {
-			border-left: 1px solid #3c393b !important;
-		}
-	}
+	padding-bottom: 4.375rem;
 }
 
-#footer-bottom {
-	padding-top: 1.375rem;
-	padding-bottom: 1.375rem;
-
-	p {
-		color: #727270;
-		font-weight: 500;	
-		line-height: 2;
-		z-index: 1;	
-		font-size: 0.875rem;
-		margin: 0;
-	}
+.copyrights {
+	color: #8c8c8c;
+	margin: 0;
 }
-
